@@ -11,11 +11,15 @@ DashJS is a lightweight, standalone JavaScript library, used for the creation of
 DashJS uses Scalable Vector Graphics (SVG) to create resolution-independent dashboards, usable within any SVG-compatible browser or within software such as **Adobe Illustrator, Phooshop, GIMP, Paint Shop Pro, etc.**
 
  
-[Examples](https://github.com/evgenievdev/DashJS/wiki/Examples) &mdash;
-[Documentation](https://github.com/evgenievdev/DashJS/wiki) &mdash;
-[Production Version](https://github.com/evgenievdev/DashJS/tree/master/production) &mdash;
-[Developer Version](https://github.com/evgenievdev/DashJS/tree/master/developer) &mdash;
-[Editor](https://github.com/evgenievdev/DashJS/tree/master/editor)
+[1. Examples](https://github.com/evgenievdev/DashJS/wiki/Examples)
+
+[2. Documentation](https://github.com/evgenievdev/DashJS/wiki)
+
+[3. Production Version](https://github.com/evgenievdev/DashJS/tree/master/production) 
+
+[4. Developer Version](https://github.com/evgenievdev/DashJS/tree/master/developer)
+
+[5. Editor](https://github.com/evgenievdev/DashJS/tree/master/editor)
 
 Hierarchy
 ---------------------
