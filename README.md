@@ -1,6 +1,8 @@
 DashJS 0.1
 ====================
 
+![Demo](https://camo.githubusercontent.com/d521db039d333848a324f7431b81f0b210337b77/68747470733a2f2f707265766965772e6962622e636f2f64525872466b2f646173686a735f6361725f64617368626f6172645f612e6a7067)
+
 [![GitHub release](https://img.shields.io/badge/version-0.1-red.svg)](https://github.com/evgenievdev/DashJS)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg)]()
@@ -20,7 +22,7 @@ DashJS uses Scalable Vector Graphics (SVG) to create resolution-independent dash
 [4. Developer Version](https://github.com/evgenievdev/DashJS/tree/master/developer)
 
 [5. Editor](https://github.com/evgenievdev/DashJS/tree/master/editor)
-
+ 
 Hierarchy
 ---------------------
 
