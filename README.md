@@ -46,50 +46,7 @@ Basic Usage
 
 ### Initialisation (Dashboard)
 ```javascript
-var Dash = new DashJS.Dash( Container );
+var Dashboard = new DashJS.dash({
+ target: "#container-selector" // Uses querySelector by default (if you have JQuery, it uses that instead)
+});
 ```
-
-**Container** - the ID of the html element where the dashboard will be rendered
-
-### Creating a Cluster
-```javascript
-var Properties = {
-  CSS_Class: 'CSS_Class_Name_Here',
-  Name: 'Reference_For_Cluster'
-};
-
-var Cluster = Dash.New.Cluster( Properties );
-```
-**CSS_Class** - string - the css class used for the cluster's wrapper (div). The dimensions of the cluster are defined via the width & height property of the CSS Class used 
-
-**Name** - string - the name used to reference this cluster ( property in hash-table )
-
-**NOTE:** It is possible not to supply a 'Name' parameter for the cluster. Instead a random reference number will be generated automatically.
-
-**The function returns the reference for the newly created layer.**
-
-### Creating a Layer
-```javascript
-var Layer = Dash.New.Layer( ClusterReference , LayerName );
-```
-
-**NOTE:** If LayerName is not defined, an automatic reference will be created for the layer.
-
-**The function returns the reference for the newly created layer**
-
-### Creating an Element
-```javascript
-var Element = Dash.New.Element( ClusterReference , LayerReference , ElementName , ElementType , ElementProperties , ExportMethods );
-```
-
-**ElementType** - string - the type of element you wish to create (there is a list of elements to choose from, each with its own properties)
-
-**ElementProperties** - object - this is an object with various attributes (some compulsory, some optional) which can be defined to 
-
-**ExportMethods** - boolean - some element types have their own custom methods (functions - e.g. SetValue/GetValue for the 'needle' element type). If ExportMethods is set to true, any existing methods will be returned by this function.
-
-**NOTE:** If ElementName is not defined,  an automatic reference will be created for the element.
-
-**NOTE2:** Every element type has it's own unique set of required and optional properties. For more information on the structure of the various element types, see the **documentation**. 
-
-**The function returns the reference for the newly created element.**
