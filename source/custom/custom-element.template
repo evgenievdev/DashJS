@@ -1,0 +1,45 @@
+ 
+// Declare a custom element module. The name of the module must NOT clash with any existing ones
+var DashJS = DashJS || {};
+DashJS.elements[ "custom-element" ] = (function( Export ){
+	
+	// Every element must have a defined Schema which holds configurable properties. Some can be required, others can be optional.
+	Export.Schema = {
+
+		SVG_Elem : "rect",		   // The SVG element used for the creation of this element. Check official SVG specification for more information on available types.
+		Quantifier: "Quantity",	   // Optional parameter. If no quantifier is set, this element will be a single object. Otherwise it will be an Array of n-objects
+		
+		Properties : {
+		
+			"Quantity" : { Type: "integer" },			 		 // How many objects of this element instance there will be
+			"Radius" : { Type: "number" , Default: 50 }, 		 // If a "Default" propert exists, this is an OPTIONAL parameter
+			"Length" : { Type: "number" , Min: 10, Max:20 },	 // Optionally, you can restrict the min/max values of a number type
+			"StartAngle" : { Type: "number" },
+			"EndAngle" : { Type: "number" } 
+			
+		}
+
+	};
+	
+	// Every element has an Update method used for drawing and making changes to the SVG object.
+	Export.Update = function() {
+
+		// Update element (draw) code here. Use the references below to draw this element on the canvas
+		// this.element ; this.element.object
+		// this.layer ; this.layer.svg
+		// this.gauge
+
+	};
+	
+	// Define any custom methods for this element. 
+	// These methods are returned upon instancing of this element and appending to a layer, as long as the exportCustomMethods flag is set to TRUE.
+	Export.Methods = {
+		
+		testmethod: function() {
+			// Like the Update() method, any custom method has access to the element,layer and gauge objects
+		}
+
+	};
+
+})( {} );
+ 
