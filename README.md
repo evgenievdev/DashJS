@@ -1,7 +1,7 @@
 DashJS 0.1
 ====================
 
-![Demo](https://camo.githubusercontent.com/d521db039d333848a324f7431b81f0b210337b77/68747470733a2f2f707265766965772e6962622e636f2f64525872466b2f646173686a735f6361725f64617368626f6172645f612e6a7067)
+![Demo](https://image.ibb.co/gncfwV/preview.jpg)
 
 [![GitHub release](https://img.shields.io/badge/version-0.1-red.svg)](https://github.com/evgenievdev/DashJS)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
