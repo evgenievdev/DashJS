@@ -8,7 +8,7 @@ DashJS 0.1
 [![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg)]()
 
 
-DashJS is a lightweight, standalone JavaScript library, used for the creation of vector-based Dashboards.
+DashJS is a lightweight, standalone JavaScript library, used for the creation of vector-based Dashboards and Gauges.
 
 DashJS uses Scalable Vector Graphics (SVG) to create resolution-independent dashboards, usable within any SVG-compatible browser or within software such as **Adobe Illustrator, Phooshop, GIMP, Paint Shop Pro, etc.**
 
@@ -17,36 +17,38 @@ DashJS uses Scalable Vector Graphics (SVG) to create resolution-independent dash
 
 [2. Documentation](https://github.com/evgenievdev/DashJS/wiki)
 
-[3. Production Version](https://github.com/evgenievdev/DashJS/tree/master/production) 
+[3. Production Version](https://github.com/evgenievdev/DashJS/tree/master/build) 
 
-[4. Developer Version](https://github.com/evgenievdev/DashJS/tree/master/developer)
+[4. Developer Version](https://github.com/evgenievdev/DashJS/tree/master/source)
 
 [5. Editor](https://github.com/evgenievdev/DashJS/tree/master/editor)
  
 Hierarchy
 ---------------------
 
-The library uses a layer approach with the following hierarchy: 
-**Dashboard -> Cluster -> Layer -> Element**. 
+The library follows a simple hierarchical order: From left to right is the level of abstraction in descending order:
+**Dashboard -> Gauge -> Layer -> Element**. 
+From left to right is the level of abstraction in descending order. 
+Similar to programs like Adobe Photoshop, each gauge has a layering system to allow separation between different elements. If used correctly, this can increase performance.
 
-First a Dashboard is created.
+The process of dashboard creation can be simplified to the following 4 steps:
+- Create a new dashboard instance
+- Create as many gauges within the dashboard as needed.
+- Create as many layers within each gauge as needed (by default every gauge has a "base" layer, so you can skip this step)
+- For each layer in your gauges, create static and dynamic elements (e.g. lines, labels, needles).
 
-Within the Dashboard, an unrestricted number of Clusters can be created.
+Alternatively, if you only need one gauge, you can skip creating the dashboard and simply create a new gauge instance.
 
-Within each Cluster, an unrestricted number of Layers can be created.
+Once your dashboard is complete you can use the custom methods for certain elements (e.g. needles) to make your dashboard gauges dynamic. You can also alter the look of every element after it has been created. 
 
-Within each Layer, an unrestricted number of Elements of various types can be created.
-
-Basic Usage
+Getting Started
 ---------------------
 ### Load Library
 ```html
 <script src="path/to/dashjs.min.js"></script>
 ```
 
-### Initialisation (Dashboard)
-```javascript
-var Dashboard = new DashJS.dash({
- target: "#container-selector" // Uses querySelector by default (if you have JQuery, it uses that instead)
-});
-```
+For a detailed outline of the API, check the **documentation** and the **examples**. 
+
+NOTE: To create complex dashboards, a lot of effort is needed, which makes this library somewhat difficult to use by beginners. 
+To streamline the process, an editor is currently in early development.
