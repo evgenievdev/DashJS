@@ -1,0 +1,40 @@
+.Dashboard {
+			
+	width:1200px;
+	height:400px;
+	border:solid 1px grey;
+	background:#111;
+	position:relative;
+	
+}
+
+.Tachometer {
+ 
+	position: absolute;
+	left: 200px;
+	top: 50px;
+	
+}
+
+.Speedometer {
+	 
+	position: absolute;
+	left: 600px;
+	top: 50px;
+}
+
+.Fuel {
+ 
+	position: absolute;
+	left: 950px;
+	top: 160px;
+	
+}
+
+.Temperature {
+	 
+	position: absolute;
+	left: 50px;
+	top: 160px;
+	
+}

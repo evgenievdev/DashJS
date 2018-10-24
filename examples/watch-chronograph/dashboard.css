@@ -1,0 +1,38 @@
+.Dashboard {
+			
+	width:600px;
+	height:600px;
+	border:solid 1px grey;
+	background:#151515;
+	position:relative;
+	
+}
+
+.Watch {
+ 
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	
+}
+
+.Chrono1 {
+	position: absolute;
+	left: 33.3%;
+	top: 280px;
+	transform: translate(-50%,-50%);
+}
+.Chrono2 {
+	position: absolute;
+	left: 66.6%;
+	top: 280px;
+	transform: translate(-50%,-50%);
+}
+.Chrono3 {
+	position: absolute;
+	left: 50%;
+	top: 390px;
+	transform: translate(-50%,-50%);
+}
+
+ 
